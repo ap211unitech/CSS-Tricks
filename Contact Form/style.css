@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(202, 194, 194);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.2);
+    max-width: 60vw;
+    max-height: 70%;
+}
+
+.contact-image {
+    background-image: url('contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 50%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.heading h3 {
+    font-size: 24px;
+}
+
+.underline {
+    height: 5px;
+    width: 60px;
+    border-radius: 30px;
+    position: relative;
+    top: -20px;
+    background-color: rgb(65, 123, 65);
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+    width: 100%;
+    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input, textarea {
+    background-color: gainsboro;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 17px;
+    padding: 6px;
+}
+
+input:hover, textarea:hover {
+    background-color: rgb(212, 210, 210);
+}
+
+input:focus, textarea:focus {
+    background-color: #fff;
+    border: 2px solid rgb(164, 129, 197);
+}
+
+input[type=submit] {
+    color: #fff;
+    background-color: rgb(81, 151, 81);
+}
+
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(68, 127, 68);
+}
+
+@media screen and (max-width:1000px) {
+    .contact-form {
+        flex-direction: column;
+        margin: 1rem;
+        max-width: 557px;
+    }
+
+    .contact-image {
+        height: 20vh;
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .fields {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input, textarea {
+        font-size: 15px;
+        padding: 4px;
+    }
+
+}
+
+@media screen and (min-width:600px) {
+    .contact-form {
+        margin: 1rem auto auto auto;
+    }
+}

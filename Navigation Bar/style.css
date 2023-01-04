@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5D4954;
+    min-height: 8vh;
+    color: rgb(226, 226, 226);
+}
+
+nav .left h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+nav .right ul {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    font-weight: bold;
+}
+
+nav .right ul li:hover {
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+
+}
+
+.burger .line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background: rgb(226, 226, 226);
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .burger {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+        width: 55%;
+        background-color: #5D4954;
+        transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+    }
+
+    nav .right ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .right ul li {
+        opacity: 0;
+    }
+
+}
+
+.burger-active {
+    transform: translateX(0%);
+}
+
+.toogle-line1 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.toogle-line2 {
+    opacity: 0;
+}
+
+.toogle-line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+}
+
+@keyframes navLinksFade {
+    from {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.img {
+    background-image: url("https://images.hdqwalls.com/wallpapers/red-clouds-ig.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 92vh;
+}
