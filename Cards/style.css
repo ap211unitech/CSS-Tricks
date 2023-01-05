@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/635a90cf6b636e7feac7a645_obamas-resignation%20(4).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cards {
+    margin: 1.3rem 1rem 1.3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+    color: white;
+    flex-basis: 30vw;
+    flex-grow: 1;
+    border-radius: 10px;
+    box-shadow: 0px 50px 19px 5px rgba(0, 0, 0, 0.2);
+
+    background: #056B77;
+    background: -webkit-linear-gradient(top left, #056B77, #1B83BA);
+    background: -moz-linear-gradient(top left, #056B77, #1B83BA);
+    background: linear-gradient(to bottom right, #0f444a, #115174);
+}
+
+.user-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-img img {
+    width: 130px;
+    height: 135px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.user-img span {
+    color: #38BDF8;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.content {
+    color: #a1b4d1;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+@media (min-width:1080px) and (max-width:1280px) {
+    .cards {
+        margin: 1.3rem 1rem 1.3rem 1rem;
+    }
+}
+
+@media (min-width:1280px) {
+    .cards {
+        margin: 1.3rem 2rem 1.3rem 2rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .card {
+        flex-basis: 40vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cards {
+        margin: 1.3rem 2rem 1.3rem 2rem;
+    }
+
+    .card {
+        flex-basis: 100vw;
+    }
+}
