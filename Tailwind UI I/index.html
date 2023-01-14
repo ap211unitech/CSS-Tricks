@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sen&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        reddish: '#eb5757',
+                    },
+                }
+            }
+        }
+    </script>
+    <title>Tailwind Grid Project</title>
+</head>
+
+<body style="font-family: 'Sen', sans-serif;">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-reddish flex justify-between items-center p-6">
+        <div class="ml-[5rem] cursor-pointer">
+            <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                alt="Logo">
+        </div>
+        <div class="text-white">
+            <ul class="flex gap-8 pr-[7rem] text-lg">
+                <li>
+                    <a class="hover:rounded-lg hover:bg-black py-2 px-3" style="transition: background 0.2s;"
+                        href="#">Home</a>
+                </li>
+                <li>
+                    <a class="hover:rounded-lg hover:bg-black py-2 px-3" style="transition: all 0.2s;"
+                        href="#">About</a>
+                </li>
+                <li>
+                    <a class="hover:rounded-lg hover:bg-black py-2 px-3" style="transition: all 0.2s;" href="#">Shop</a>
+                </li>
+                <li>
+                    <a class="hover:rounded-lg hover:bg-black py-2 px-3" style="transition: all 0.2s;"
+                        href="#">Donate</a>
+                </li>
+                <li>
+                    <a class="hover:rounded-lg hover:bg-black py-2 px-3" style="transition: all 0.2s;"
+                        href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Showcase -->
+    <div class="min-h-[550px] bg-cover bg-center flex flex-col justify-center pl-[12rem]"
+        style="background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url(https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg)">
+        <h1 class="text-7xl font-bold text-white w-[40%] leading-[5.5rem] tracking-wide">
+            Serving you
+            since 1989.
+        </h1>
+        <p class="text-white text-xl w-[30%] my-5 leading-[2rem]">
+            Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.
+        </p>
+        <strong
+            class="rounded-md border-[1px] tracking-widest w-auto px-5 py-2 w-fit border-white text-white cursor-pointer hover:text-black hover:bg-white"
+            style="transition: all 0.3s;">
+            Shop Merch
+        </strong>
+    </div>
+
+    <div class="max-w-[1300px] m-auto">
+
+        <!-- Cards text -->
+        <div class="flex gap-[3rem] justify-center items-center">
+            <div class="w-[50%]">
+                <p class="uppercase text-lg text-gray-400"> Ways to support</p>
+                <strong class="text-5xl">Support Acme Outdoors.</strong>
+            </div>
+            <div class="w-[50%] m-6 text-lg">
+                COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now
+                more
+                than ever. Below, we’ve listed the best ways to help us through this season.
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-3 my-10 gap-[6rem]">
+            <div class="box flex flex-col gap-10">
+                <div
+                    class="bg-black rounded-lg text-white min-h-[350px] flex justify-center items-center relative text-3xl font-bold uppercase tracking-[0.25rem]">
+                    Shop products
+                    <strong class="absolute top-0 left-0 p-9 text-5xl">01</strong>
+                    <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57a5836db2a07bab0e3_Circle.svg"
+                        class="absolute bottom-[-20%] right-[-20%]" alt="">
+                </div>
+                <p class="text-lg text-gray-600 z-10">Our full product line is still available online here on our site!
+                    Getting outside and hiking is
+                    still
+                    something you can do. Get your gear now!</p>
+            </div>
+
+            <div class="box flex flex-col gap-10">
+                <div
+                    class="bg-black rounded-lg text-white min-h-[350px] flex justify-center items-center relative text-3xl font-bold uppercase tracking-[0.25rem]">
+                    Donate
+                    <strong class="absolute top-0 left-0 p-9 text-5xl">02</strong>
+                    <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adc54453434efb9ee_Triangle.svg"
+                        class="absolute bottom-[-15%] right-[-8%]" alt="">
+                </div>
+                <p class="text-lg text-gray-600 z-10">Our full product line is still available online here on our site!
+                    Getting outside and hiking is
+                    still
+                    something you can do. Get your gear now!</p>
+            </div>
+
+            <div class="box flex flex-col gap-10">
+                <div
+                    class="bg-black rounded-lg text-white min-h-[350px] flex justify-center items-center relative text-3xl font-bold uppercase tracking-[0.25rem]">
+                    Shop products
+                    <strong class="absolute top-0 left-0 p-9 text-5xl">01</strong>
+                    <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57afea9a31a44d66db0_Rectangle.svg"
+                        class="absolute bottom-[-30%] right-[-10%]" alt="">
+                </div>
+                <p class="text-lg text-gray-600">Our full product line is still available online here on our site!
+                    Getting outside and hiking is
+                    still
+                    something you can do. Get your gear now!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Read our statement -->
+    <div class="min-h-[450px] bg-cover bg-center flex justify-end items-center mb-10"
+        style="background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url(https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg)">
+        <div class="text-right w-[36%] mr-[10rem] text-white">
+            <h1 class="text-5xl font-bold my-8 leading-[4rem]">
+                How we're keeping you safe during COVID-19
+            </h1>
+            <p class="text-xl text-right ml-[10rem]">
+                As an outdoor shop, we’ve taken precautionary measures to ensure the safety of all our customers and
+                team members.
+            </p>
+            <button
+                class="bg-white text-black hover:bg-reddish hover:text-white rounded px-6 py-2 text-lg font-bold my-8"
+                style="transition: all 0.3s;">
+                Read Our Statement
+            </button>
+        </div>
+    </div>
+
+    <!-- Shop our products -->
+    <div class="max-w-[1300px] m-auto">
+
+        <p class="text-lg uppercase tracking-[0.15rem] text-gray-400">Shop Products</p>
+        <h1 class="font-bold text-4xl">Open 24/7/365.</h1>
+
+        <div class="mt-10 flex gap-10">
+            <div class="flex flex-col justify-center items-center cursor-pointer">
+                <img src="https://assets.website-files.com/5e853c3383474026e43f2c78/5e856e41c718420c18dd6751_patrick-hendry-eDgUyGu93Yw-unsplash.jpg"
+                    class="rounded-lg object-cover w-[400px] h-[500px]" alt="">
+                <p class="text-2xl mt-4">White Tent</p>
+                <strong class="text-lg" 1>$ 200.00 USD</strong>
+                <button class="mt-5 text-lg bg-reddish font-bold px-6 py-1 rounded-md text-white hover:bg-black"
+                    style="transition: all 0.4s;">Details</button>
+            </div>
+
+            <div class="flex flex-col justify-center items-center cursor-pointer">
+                <img src="https://assets.website-files.com/5e853c3383474026e43f2c78/5e8542c1248e59128e08e3e9_ryan-holloway-JyDmUaXMib4-unsplash.jpg"
+                    class="rounded-lg object-cover w-[400px] h-[500px]" alt="">
+                <p class="text-2xl mt-4">Tin Coffee Tumbler</p>
+                <strong class="text-lg" 1>$ 35.00 USD</strong>
+                <button class="mt-5 text-lg bg-reddish font-bold px-6 py-1 rounded-md text-white hover:bg-black"
+                    style="transition: all 0.4s;">Details</button>
+            </div>
+
+            <div class="flex flex-col justify-center items-center cursor-pointer">
+                <img src="https://assets.website-files.com/5e853c3383474026e43f2c78/5e85425605cae11f20d46181_denisse-leon-J7CjWufjmg4-unsplash.jpg"
+                    class="rounded-lg object-cover w-[400px] h-[500px]" alt="">
+                <p class="text-2xl mt-4">Blue Canvas pack</p>
+                <strong class="text-lg" 1>$ 95.00 USD
+                    <span class="text-lg text-reddish line-through inline-block">$ 145.00 USD</span>
+                </strong>
+
+                <button class="mt-5 text-lg bg-reddish font-bold px-6 py-1 rounded-md text-white hover:bg-black"
+                    style="transition: all 0.4s;">Details</button>
+            </div>
+        </div>
+        <button
+            class="capitalize mb-10 font-bold rounded-md bg-black text-lg text-white px-8 py-2 m-auto block mt-16 hover:bg-reddish"
+            style="transition: all 0.3s;">
+            View all products
+        </button>
+    </div>
+</body>
+
+</html>
